@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zxx.myapp3.activity.SheZhiActivity">
+
+    <RelativeLayout
+        android:id="@+id/shezhi_rl"
+        android:background="#33ccff"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y120">
+
+        <ImageView
+            android:id="@+id/shezhi_black"
+            android:src="@mipmap/raw_1500023215"
+            android:scaleType="fitXY"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_width="@dimen/x60"
+            android:layout_height="@dimen/y60" />
+
+        <TextView
+            android:layout_toRightOf="@+id/shezhi_black"
+            android:textColor="#ffffff"
+            android:text="返回"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/y120" />
+
+        <TextView
+            android:textColor="#ffffff"
+            android:text="我的设置"
+            android:gravity="center_vertical"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/y120" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/shezhi_v1"
+        android:background="@color/lavender"
+        android:layout_marginTop="@dimen/y120"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x10"/>
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/y130"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y120">
+
+        <TextView
+            android:id="@+id/shezhi_tv_gengxin"
+            android:gravity="center"
+            android:textColor="@color/gray"
+            android:text="检查更新"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:textColor="@color/gray"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@+id/shezhi_black_gengxin"
+            android:text="0.1.1"
+            android:layout_marginRight="@dimen/x50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_marginRight="@dimen/x30"
+            android:id="@+id/shezhi_black_gengxin"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/raw_1"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_width="@dimen/x60"
+            android:layout_height="@dimen/y60" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/y280"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y120">
+        <TextView
+            android:id="@+id/shezhi_tv_yijian"
+            android:gravity="center"
+            android:textColor="@color/gray"
+            android:text="意见反馈"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:layout_marginRight="@dimen/x30"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/raw_1"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_width="@dimen/x60"
+            android:layout_height="@dimen/y60" />
+    </RelativeLayout>
+    <View
+        android:id="@+id/shezhi_v2"
+        android:background="@color/lavender"
+        android:layout_marginTop="@dimen/x430"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y10"/>
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/y440"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y120">
+        <TextView
+            android:id="@+id/shezhi_tv_map"
+            android:gravity="center"
+            android:textColor="@color/gray"
+            android:text="高德地图"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:layout_marginRight="@dimen/x30"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/raw_1"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_width="@dimen/x60"
+            android:layout_height="@dimen/y60" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/y590"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y120">
+        <TextView
+            android:id="@+id/shezhi_tv_huancun"
+            android:gravity="center"
+            android:textColor="@color/gray"
+            android:text="清除缓存"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/shezhi_tv_hcnum"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@+id/shezhi_black_huancun"
+            android:text="缓存的数量"
+            android:textColor="@color/gray"
+            android:layout_marginRight="@dimen/x50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/shezhi_black_huancun"
+            android:layout_marginRight="@dimen/x30"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/raw_1"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_width="@dimen/x60"
+            android:layout_height="@dimen/y60" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/shezhi_login_clear"
+        android:layout_marginTop="@dimen/y800"
+        android:background="@drawable/bg_login_shape"
+        android:textColor="#ffffff"
+        android:text="退出登录"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+</RelativeLayout>
