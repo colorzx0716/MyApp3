@@ -2,6 +2,7 @@ package com.zxx.myapp3.dagger2;
 
 import com.zxx.myapp3.view.AdView;
 import com.zxx.myapp3.view.FollowUsersView;
+import com.zxx.myapp3.view.JokerView;
 import com.zxx.myapp3.view.LoginView;
 import com.zxx.myapp3.view.SearchView;
 import com.zxx.myapp3.view.UserInfoView;
@@ -23,6 +24,11 @@ public class MyModule {
     private SearchView searchView;
     private AdView adView;
     private VideosView videosView;
+    private JokerView jokerView;
+
+    public MyModule(JokerView jokerView) {
+        this.jokerView = jokerView;
+    }
 
     public MyModule(AdView adView, VideosView videosView) {
         this.adView = adView;
@@ -76,6 +82,15 @@ public class MyModule {
     VideosView providesVideos(){
         return videosView;
     }
+
+    //段子列表
+    @Provides
+    JokerView providesJoker(){
+        return jokerView;
+    }
+
+
+
 
 
 

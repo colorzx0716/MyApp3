@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:background="#F0FFFF"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y150">
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:id="@+id/joker_list_touxiang"
+            android:src="@mipmap/raw_1500033586"
+            android:layout_width="@dimen/x150"
+            android:layout_height="@dimen/y150" />
+
+        <RelativeLayout
+            android:id="@+id/joker_list_rl"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_toRightOf="@+id/joker_list_touxiang"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/y150">
+
+            <TextView
+                android:textSize="20sp"
+                android:textColor="#ff6655"
+                android:id="@+id/joker_list_nicheng"
+                android:text="发布人昵称"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_below="@+id/joker_list_nicheng"
+                android:id="@+id/joker_list_data"
+                android:text="日期"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/y150"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/joker_list_duanzi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_below="@+id/joker_list_duanzi"
+            android:id="@+id/joker_list_rv"
+            android:layout_marginTop="@dimen/y100"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

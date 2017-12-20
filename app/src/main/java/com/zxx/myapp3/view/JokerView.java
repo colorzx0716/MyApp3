@@ -1,10 +1,13 @@
 package com.zxx.myapp3.view;
 
+import com.zxx.myapp3.entity.JokerBean;
+
 /**
- * Created by 张肖肖 on 2017/12/20.
+ * 段子列表View
  */
 
 public interface JokerView {
 
-    
+    void JokerSuccess(JokerBean value);
+    void JokerFailure(String msg);
 }
