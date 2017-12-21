@@ -1,5 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:focusableInTouchMode="true"
+    android:background="@mipmap/raw_1500974387"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <scut.carson_ho.diy_view.SuperEditText
+        android:id="@+id/fg4_super_name"
+        android:layout_width="@dimen/x480"
+        android:layout_height="wrap_content"
+
+        app:ic_left_click="@drawable/ic_left_click"
+        app:ic_left_unclick="@drawable/ic_left_unclick"
+        app:left_x="0"
+        app:left_y="0"
+        app:left_width="60"
+        app:left_height="60"
+
+        app:ic_delete="@drawable/delete"
+        app:delete_x="0"
+        app:delete_y="0"
+        app:delete_width="80"
+        app:delete_height="80"
+
+        app:lineColor_click="@color/colorfocus"
+        app:lineColor_unclick="@color/colorDeafult"
+        app:linePosition="1"
+
+        app:cursor="@drawable/cursortest"
+
+        />
+
+    <scut.carson_ho.diy_view.SuperEditText
+        android:id="@+id/fg4_super_pwd"
+        android:layout_below="@+id/fg4_super_name"
+        android:layout_width="@dimen/x480"
+        android:layout_height="wrap_content"
+
+        app:ic_left_click="@drawable/password_click"
+        app:ic_left_unclick="@drawable/password_unclick"
+
+        android:textSize="20sp"
+        android:inputType="textPassword"
+
+        />
+
+    <Button
+        android:layout_marginTop="@dimen/x100"
+        android:id="@+id/fg4_super_btn1"
+        android:layout_below="@+id/fg4_super_pwd"
+        android:text="注册"
+        android:layout_width="@dimen/x480"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_marginTop="@dimen/x50"
+        android:id="@+id/fg4_super_btn2"
+        android:layout_below="@+id/fg4_super_btn1"
+        android:text="登录"
+        android:layout_width="@dimen/x480"
+        android:layout_height="wrap_content" />
+   
+    
 
 </RelativeLayout>
